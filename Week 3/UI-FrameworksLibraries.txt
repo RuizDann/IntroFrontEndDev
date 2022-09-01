@@ -1,0 +1,265 @@
+UI Frameworks and Libraries:
+
+As a developer, deploying your application to a web server, you will use a bundling tool to:
+Combine all your dependencies into a single file.
+
+There are media queries that are a part of the CSS version 3 specification. They allow developers to query in order to conditionally apply CSS rules:
+- Aspect ratio, Display size, and Orientation
+
+A package manager is a tool that automatically downloads and installs dependencies. We also refer to dependencies as packages. A package manager also provides the capability to publish your own packages.
+For each dependency, you can specify a version of that dependency and the package manager will download it for you. If there is a dependency tree, the package manager takes care of that for you. It will automatically download all of the dependency tree so that you can use APIs without dependency issues.
+The purpose of a bundler is to automatically combine them into a single file. If you're bundle is significantly large, many bundles can split your dependencies into multiple bundles.
+There are many bundle is available such as Gulp and Webpack.
+
+Responsive design means that a web page can automatically stretch or shrink depending on the screen is displayed on.
+Responsive design is a set of three practices that allows a website to automatically change its visuals.
+It is the combination of three techniques, flexible grids, fluid images and media queries.
+
+Flexible grids are made up of columns, gutters and margins. The space between the columns is called the gutter and the spaces between the content and the left and right edges of the screen are called margins. Instead of defining website Element sizes based on pixels, flexible grids are defined in percentage values, allowing them to adjust depending on screen size.
+
+Fluid images:
+setting the CSS max width property of images to 100%. The images will scale down smaller if they're containing column becomes narrower than the images size but never grow larger. This enables an image to scale down to fit in a flexibly sized column rather than overflow it but not grow larger and become pixelated if the column becomes wider than the image.
+
+Media queries that are part of CSS.
+They allow developers to query the display size orientation and aspect ratio to conditionally apply CSS rules.
+For example, if you wanted your website background to appear blue on a screen size less than or equal to 700 pixels. Like on a mobile phone, you could use a media rule to set the background depending on the size of the screen.
+
+When these elements are used together, you build a website that will automatically adjust its layout based on the device, thus delivering a responsive grid.
+
+A breakpoint is the point at which a website's content and layout will adapt to provide the best possible user experience. A Breakpoint can function in different ways across three different grids a fixed grid fluid or for with grids and lastly, hybrid grids.
+
+The fixed grid has a fixed content with that doesn't change in a specific breakpoint range while the flexible margins occupy the remaining space on screen.
+
+Fluid or full width grids with fluid with columns and fixed gutters and side margins.
+The fluid grid has a flexible content with that goes edge to edge as per the screen size.
+In a fluid grid, columns either grow or shrink to adapt to the available space.
+
+Hybrid grids have both fluid width and fixed with components. Many responsive design frameworks provide multiple CSS rules based on different device sizes to provide the best visual experience.
+
+<--------------------------------------------------------------------------------------------->
+Bootstrap
+
+Bootstrap is often described as a way to "build fast, responsive sites" and it is a "feature-packed, powerful, and extensible frontend toolkit". 
+Some people refer to it as a "front-end" framework, and some are trying to be more specific by referring to it as a "CSS framework" or a “CSS library”. 
+Simply put, Bootstrap is a library of CSS and JavaScript code that you can combine to quickly build visually appealing websites.
+Modern web development is all about components. Small pieces of reusable code that allow you to build websites quickly. 
+Bootstrap comes with multiple components for very fast construction of multiple components, or parts of components. 
+Bootstrap comes with a pre-made set of CSS rules for building a responsive grid.
+Bootstrap is very popular amongst developers as it saves development time and provides a way for developers to build visually appealing prototypes and websites.
+Bootstrap saves significant time because all the CSS code that styles its grid and pre-built components is already written. Instead of having to have a high level of expertise in various CSS concepts, you can just use the existing Bootstrap CSS classes to produce nicely-looking websites. This is indispensable when you need to quickly iterate on website layouts. 
+Once you know how Bootstrap works, you’ll have enough knowledge to tweak its styling and a whole new world of development opens up to you.
+Since Bootstrap is so popular, understanding how to work with it is a prerequisite in many web development companies. Additionally, you can be safe in knowing that both you and your team members have a common design system and you don't have to spend time deciding how to build one. You are free to jump from team to team, from project to project, even from one company to another, and you don't need to re-learn "their way of doing things".
+
+<-------------------------------------------------------------------------------------->
+
+Using Bootstrap style
+
+When setting up a Bootstrap website, what is the first element you would add?
+- container
+
+Bootstrap has quite a large CSS library built by Bootstraps developers using thousands of use cases.
+You will use class in fixes for responsive breakpoints in the Bootstrap grid system.
+- Extra small is for screens less than 576 pixels wide. Extra small is the default breakpoint in Bootstrap CSS rules.
+- Small is for screens greater than or equal to 576 pixels wide. In bootstrap CSS rules, this is abbreviated as SM.
+- Medium is for screens greater than or equal to 768 pixels wide. In Bootstrap CSS rules, this is abbreviated as MD.
+- Large is for screens greater than or equal to 992 pixels wide. In Bootstrap CSS rules, this is abbreviated as LG.
+- Extra large is for screens greater than or equal to 1200 pixels wide. In bootstrap CSS rules this is abbreviated as XL.
+- Extra extra large is the screen is greater than or equal to 1400 pixels wide. In bootstrap CSS rules, this is abbreviated as XXL.
+You have to insert the abbreviation into the CSS class name.
+
+Alert primary displays the alert using Bootstraps primary color which is blue. The dash primary part of the class is the modifier.
+If you want to change this to red for example, for an error message you will use the danger modifier.
+Here is a list of modifiers available in Bootstrap.
+- Primary, secondary, success, info, warning, danger, light, dark.
+
+<----------------------------------------------------------------------------------->
+
+Bootstrap Grid
+Bootstrap provides both of these as part of its library.
+The bootstrap grid system helps us to create web page layouts through a series of rows and columns that house our content.
+For the grid, bootstrap uses a 12 column grid system that can be fluid or fixed. The bootstrap grid system always has a container, rows and columns.
+The container is the root element of your grid.
+
+Bootstrap's Grid System is structured with 3 types of elements. Select the correct types from the following options:
+Contairners, Rows, Columns
+
+<------------------------------------------------------------------------------------>
+
+Bootstrap documentation:
+https://getbootstrap.com/docs
+
+Navigating the documentation:
+The sidebar on the webpage allows you to navigate through the different sections of the documentation. There is also a search box if you need to search for a specific piece of information.
+
+Layout:
+The layout section of the documentation describes how to use the grid system of Bootstrap. This covers what you've learned so far and includes more advanced usage such as offsets, column alignment, auto-layout and variable width columns.
+
+Content:
+The content section of the documentation describes Bootstrap's default text styling and how to use responsive images and tables.
+
+Forms:
+The forms section of the documentation describes how to build forms using Bootstrap's styles. The library has many CSS rules to improve your form's user interface and experience. Below are some features you'll frequently use as a developer:
+
+Form Styling
+Bootstrap includes CSS rules to improve the visual style of input elements.
+This table outlines the different HTML form elements and which Bootstrap CSS class should be used for them.
+
+Form Element:			CSS class:
+	input					form-control
+	input type="checkbox"	form-check-input
+	input type="radio"		form-check-input
+	input type="range"		form-range
+	select					form-select
+
+Using these CSS classes will style the elements appropriately for different input types, sizings and states.
+https://getbootstrap.com/docs/5.0/forms/overview/
+
+Switches:
+If you've used an app on your mobile device, you're probably familiar with the switch input type.
+Bootstrap includes CSS rules to style checkbox input elements as switches. 
+To do this:
+1. Add the input to a div element. 
+2. On the div element, apply the form-check and form-switch CSS classes. 
+3. On the input element, add the form-check-input CSS class.
+
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox">
+</div>
+https://getbootstrap.com/docs/5.0/forms/checks-radios/#switches
+
+Input Groups:
+Input groups are useful for providing additional content to the input field. For example, if you wanted to request the user to input a US dollar amount, you can use an input group to show the dollar symbol and cents amount.
+To do this:
+1. Add the input to a div element. 
+2. Apply the input-group CSS classes on the div element. 
+3. Add a span element before and/or after the input element and apply the input-group-text CSS class to it. The text content is then added inside the span element.
+
+<div class="input-group">
+  <span class="input-group-text">$</span>
+  <input type="text" class="form-control">
+  <span class="input-group-text">.00</span>
+</div>
+https://getbootstrap.com/docs/5.0/forms/input-group/
+
+Floating Labels:
+Floating labels help provide form information to the user as part of the input itself. These are different from regular form placeholders. The information stays visible if the user is interacting with the element or if the element has content.
+To do this, add the input to a div element. On the div element, apply the form-floating CSS classes.
+
+<div class="form-floating">
+  <input type="email" class="form-control" id="addressInput" placeholder="Address">
+  <label for="addressInput">Address</label>
+</div>
+https://getbootstrap.com/docs/5.0/forms/floating-labels/
+
+Components
+As you have learned, Bootstrap comes with many pre-made UI elements and styles to help speed up your development.
+
+Some of these components require Javascript to work, while others only require CSS classes applied to HTML elements.
+The Components section of the documentation explains these requirements on each component page and provides many code examples.
+
+<------------------------------------------------------------------------------------>
+
+Other CSS frameworks and libraries:
+
+Foundation:	https://get.foundation/
+Foundation is a framework for building user interfaces similar to Bootstrap.
+It is used by many large companies such as Pixar, Polar and Sonos.
+One prominent feature of Foundation is that it can be used to style content for sending via email.
+
+Pure.css: https://purecss.io/
+Pure.css is another library for building user interfaces.
+While it doesn't have as many features as Bootstrap, it is designed to be minimal in file size.
+Smaller file sizes improve loading times for web pages as there is less data to transfer from the web server.
+If your next project is focused on minimal loading time, this library is worth considering.
+
+Tailwind CSS: https://tailwindcss.com/
+Tailwind CSS is a CSS framework that uses a utility-based approach for its CSS rules.
+This means that the framework provides many CSS classes with a single purpose.
+For example, the CSS class pt-6 sets the padding-top CSS property to 6 pixels. This means that you can be precise in applying styling to your HTML without writing CSS.
+The advantage to this is that it is more flexible for customizing your webpage's design using the framework.
+The disadvantage is that if multiple developers are working on a project, it could lead to inconsistent design if the team is not strict on its design rules.
+
+UIKit: https://getuikit.com/
+UIKit is a lightweight CSS framework featuring a small set of responsive components.
+Its simple design allows developers to easily customize the style rules and visuals.
+
+MVP.css: https://andybrewer.github.io/mvp/
+MVP.css is a small CSS library that automatically styles HTML elements without needing to apply CSS classes to them.
+The library aims to allow a developer to quickly prototype a user interface without worrying about the final design, while still being visually appealing.
+MVP comes from the technical term Minimal Viable Product, a product with sufficient features to demo to customers or other business stakeholders.
+
+<------------------------------------------------------------------------------------>
+
+Additional Resources
+Bootstrap Official Website:
+https://getbootstrap.com/
+
+Bootstrap 5 Foundations by Daniel Foreman:
+https://www.amazon.com/Bootstrap-Foundations-Mr-Daniel-Foreman/dp/B0948GRS8W/
+
+Responsive Web Design with HTML5 and CSS  by Ben Frain:
+https://www.amazon.com/Responsive-Web-Design-HTML5-CSS/dp/1839211563/
+
+Bootstrap Themes:
+https://themes.getbootstrap.com/
+
+<------------------------------------------------------------------------------------>
+
+Static and Dynamic content:
+- Static content is files that the server transfers just as they are stored on the web server, such as videos or images. 
+- Dynamic content, on the other hand, is generated when the HTTP request is made. 
+	For example, the content may be generated based on input from a user, or when you visit a news website, it would be based on the current date. What actually happens, is that the web server communicates with another kind of server, called an application server or a back-end. The application server generates the dynamic content that the web server sends back to the user's browser.
+
+Cache:
+Web servers use a process called caching instead of generating content dynamically for every request. Caching means the web server keeps a copy of dynamic content. 
+If the content is requested again, the web server can immediately send this cached version instead of passing the request again to the application server.
+This reduces the amount of dynamic content that the application server has to generate.
+
+<------------------------------------------------------------------------------------>
+
+Single-page Applications:
+- For a user-friendly, mobile-friendly experience.
+What it means is that there is only one HTML page that gets sent from the server to the browser, but that page will update its content as your users interact with your website.
+A SPA allows the user to interact with the website without the application needing to download entire new web pages.
+Instead, it rewrites the current web page as the user interacts with it. The result is a browsing experience that feels faster and more responsive to user input.
+
+A SPA has two approaches to serving code and resources:
+Bundling, and Lazy loading or Code splitting
+
+Bundling:
+When the browser requests the application, the server returns and loads all necessary HTML, CSS, and JavaScript immediately.
+
+Lazy loading:
+The browser requests the application and the server returns only the minimum HTML, CSS, and JavaScript needed to load the application. 
+Additional resources are downloaded as required.
+
+When a user navigates a specific section of the application, both approaches are valid.
+The choice depends on the size, complexity, and bandwidth requirements of the application.
+With the bundling approach, if your application is complex and has a lot of resources, your bundles will grow quite large and take a long time to download. You could end up with a site that is slower than a traditional web application.
+
+<------------------------------------------------------------------------------------>
+
+What is React?
+
+React Library:
+
+React component model:
+
+React components:
+
+React components hierarchy:
+
+Additional Resources
+Here is a list of resources that may be helpful as you continue your learning journey.
+
+React Official Website
+https://reactjs.org/
+
+Choosing between Traditional Web Apps and Single Page Apps (Microsoft)
+https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/choose-between-traditional-web-and-single-page-apps
+
+React Source Code (Github)
+https://github.com/facebook/react
+
+Introduction to React.js: The original video recorded at Facebook in 2013.
+https://youtu.be/XxVg_s8xAms
